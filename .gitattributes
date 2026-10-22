@@ -1,0 +1,11 @@
+# Gunakan deteksi otomatis dan normalisasi akhir baris
+* text=auto
+
+# Pastikan file script menggunakan LF
+*.sh text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+
+# Gunakan CRLF hanya jika memang diperlukan (misalnya pada Windows batch files)
+*.bat text eol=crlf
