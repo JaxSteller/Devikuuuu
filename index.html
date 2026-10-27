@@ -688,6 +688,9 @@ function playTrack(i) {
   curTrack = i;
   isPlaying = true;
   const t = TRACKS[i];
+  // pause backsound when music plays
+  const bg = document.getElementById('bg-music');
+  bg.pause();
   audioEl.src = 'assets/audio/' + t.file;
   audioEl.play().catch(()=>{});
   document.getElementById('player-title').textContent = t.name;
@@ -698,10 +701,15 @@ function playTrack(i) {
 
 function togglePlay() {
   if (curTrack < 0) { playTrack(0); return; }
+  const bg = document.getElementById('bg-music');
   if (isPlaying) {
     audioEl.pause(); isPlaying = false;
     document.getElementById('play-btn').textContent = '▶';
+    // resume backsound when music paused
+    bg.volume = 0.3;
+    bg.play().catch(()=>{});
   } else {
+    bg.pause();
     audioEl.play().catch(()=>{}); isPlaying = true;
     document.getElementById('play-btn').textContent = '⏸';
   }
@@ -711,7 +719,19 @@ function togglePlay() {
 function nextTrack() { playTrack((curTrack + 1) % TRACKS.length); }
 function prevTrack() { playTrack((curTrack - 1 + TRACKS.length) % TRACKS.length); }
 
-audioEl.addEventListener('ended', nextTrack);
+audioEl.addEventListener('ended', () => {
+  const bg = document.getElementById('bg-music');
+  // jika tidak ada lagu berikutnya (lagu terakhir), resume backsound
+  if (curTrack >= TRACKS.length - 1) {
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
+    bg.volume = 0.3;
+    bg.play().catch(()=>{});
+    renderTracks();
+  } else {
+    nextTrack();
+  }
+});
 
 audioEl.addEventListener('timeupdate', () => {
   if (!audioEl.duration) return;
