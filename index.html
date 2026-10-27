@@ -275,8 +275,108 @@
   </div>
 </div>
 
-<!-- PAGE 2 — PESAN -->
-<div class="page lined" id="page-2">
+<!-- PAGE 2 — LDR MAP -->
+<div class="page" id="page-2" style="background:var(--paper);padding:0;overflow:hidden">
+  <div style="position:relative;min-height:100vh;display:flex;flex-direction:column">
+
+    <!-- MAP BG -->
+    <div style="position:absolute;inset:0;z-index:0;overflow:hidden">
+      <svg width="100%" height="100%" viewBox="0 0 480 600" preserveAspectRatio="xMidYMid slice" style="opacity:0.13">
+        <!-- street grid -->
+        <line x1="0" y1="80"  x2="480" y2="80"  stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="0" y1="160" x2="480" y2="160" stroke="#6b4f3a" stroke-width="0.8"/>
+        <line x1="0" y1="240" x2="480" y2="240" stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="0" y1="320" x2="480" y2="320" stroke="#6b4f3a" stroke-width="0.8"/>
+        <line x1="0" y1="400" x2="480" y2="400" stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="0" y1="480" x2="480" y2="480" stroke="#6b4f3a" stroke-width="0.8"/>
+        <line x1="60"  y1="0" x2="60"  y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="140" y1="0" x2="140" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
+        <line x1="220" y1="0" x2="220" y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="300" y1="0" x2="300" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
+        <line x1="380" y1="0" x2="380" y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
+        <line x1="440" y1="0" x2="440" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
+        <!-- diagonal roads -->
+        <line x1="0" y1="200" x2="200" y2="0"   stroke="#6b4f3a" stroke-width="0.6"/>
+        <line x1="280" y1="600" x2="480" y2="400" stroke="#6b4f3a" stroke-width="0.6"/>
+        <!-- blocks -->
+        <rect x="80"  y="90"  width="50" height="60" fill="#6b4f3a" opacity="0.18" rx="2"/>
+        <rect x="160" y="170" width="50" height="60" fill="#6b4f3a" opacity="0.12" rx="2"/>
+        <rect x="300" y="90"  width="70" height="40" fill="#6b4f3a" opacity="0.15" rx="2"/>
+        <rect x="90"  y="260" width="40" height="50" fill="#6b4f3a" opacity="0.1"  rx="2"/>
+        <rect x="320" y="260" width="50" height="70" fill="#6b4f3a" opacity="0.13" rx="2"/>
+      </svg>
+    </div>
+
+    <!-- CONTENT -->
+    <div style="position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px">
+
+      <span style="font-family:'Caveat',cursive;font-size:13px;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px">✦ hal. 02 — kita &amp; jarak</span>
+
+      <!-- distance label -->
+      <div style="font-family:'Caveat',cursive;font-size:16px;color:var(--ink-soft);margin-bottom:18px">± 150 km · tapi hati nggak pernah jauh 🤍</div>
+
+      <!-- MAP PINS ROW -->
+      <div style="width:100%;max-width:420px;position:relative;height:220px;margin-bottom:8px">
+
+        <!-- dotted path + plane -->
+        <svg style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" viewBox="0 0 420 220" preserveAspectRatio="none">
+          <!-- dotted arc -->
+          <path d="M 90 160 Q 210 40 330 160" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
+          <!-- plane at midpoint -->
+          <text x="206" y="80" font-size="22" text-anchor="middle" transform="rotate(-20,206,80)">✈️</text>
+        </svg>
+
+        <!-- PIN LEFT — kamu -->
+        <div style="position:absolute;left:20px;bottom:20px;display:flex;flex-direction:column;align-items:center;gap:4px">
+          <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;border:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);background:linear-gradient(135deg,#f5c9a5,#e0956a)">
+            <img src="assets/images/akukamu1" alt="" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:18px solid var(--accent);margin-top:-4px"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:-4px"></div>
+          <div style="font-family:'Caveat',cursive;font-size:20px;font-weight:700;color:var(--ink);margin-top:4px;font-style:italic">Jakarta</div>
+        </div>
+
+        <!-- PIN RIGHT — dia -->
+        <div style="position:absolute;right:20px;bottom:20px;display:flex;flex-direction:column;align-items:center;gap:4px">
+          <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;border:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);background:linear-gradient(135deg,#f5b8c8,#e890a8)">
+            <img src="assets/images/akukamu1" alt="" style="width:100%;height:100%;object-fit:cover">
+          </div>
+          <div style="width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:18px solid var(--accent);margin-top:-4px"></div>
+          <div style="width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:-4px"></div>
+          <div style="font-family:'Caveat',cursive;font-size:20px;font-weight:700;color:var(--ink);margin-top:4px;font-style:italic">Bandung</div>
+        </div>
+      </div>
+
+      <!-- HEARTS decoration -->
+      <div style="display:flex;gap:6px;margin:4px 0 14px;font-size:18px;opacity:0.6">🤍 🌸 🤍</div>
+
+      <!-- MESSAGE CARD -->
+      <div style="background:rgba(44,31,20,0.82);border-radius:6px;padding:20px 20px;max-width:400px;width:100%">
+        <div style="font-family:'Lora',serif;font-size:14.5px;line-height:1.85;color:#f5ede0;text-align:center">
+          Jarak bukan penghalang — dia adalah bukti.<br>
+          Bukti bahwa kamu cukup berarti untuk aku pilih,<br>
+          setiap hari, meski hanya lewat layar.<br><br>
+          Sebulan sekali kita bertemu,<br>
+          tapi rasa ini hadir dua puluh empat jam,<br>
+          tanpa henti, tanpa lelah.<br><br>
+          <em style="font-size:13px;opacity:0.85">Karena kamu bukan hanya tujuan perjalananku —<br>kamu alasan aku mau berangkat. 🤍</em>
+        </div>
+      </div>
+
+      <div class="page-nav" style="width:100%;max-width:480px;margin-top:24px;padding-top:16px;border-top:1px dashed rgba(180,160,140,0.4);display:flex;justify-content:space-between;align-items:center">
+        <button class="nav-btn" onclick="goPage(1)">← Balik</button>
+        <div class="nav-dot-row" id="dots-2"></div>
+        <button class="nav-btn" onclick="goPage(3)">Lanjut →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3 — PESAN -->
+<div class="page lined" id="page-2-old" style="display:none"></div>
+<div class="page lined" id="page-3-real" style="display:none"></div>
+<!-- ACTUAL PAGE 3 (was page 2) -->
+<div class="page lined" id="page-3">
   <div class="page-inner">
     <span class="page-label">✦ hal. 02 — pesan dari aku</span>
     <div class="washi washi-dot"></div>
@@ -575,7 +675,7 @@ function tryBgMusic() {
 }
 
 // ══════════ PAGES ══════════
-const TOTAL = 8;
+const TOTAL = 9;
 let curPage = 1;
 
 function openBook() {
@@ -592,7 +692,7 @@ function goPage(n) {
   el.style.display = 'block';
   renderDots(n);
   window.scrollTo({top:0, behavior:'smooth'});
-  if (n === 2) initTypewriter();
+  if (n === 3) initTypewriter();
 }
 
 function renderDots(p) {
