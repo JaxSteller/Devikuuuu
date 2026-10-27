@@ -275,10 +275,39 @@
   </div>
 </div>
 
-<!-- PAGE 2 — GALLERY -->
+<!-- PAGE 2 — PESAN -->
 <div class="page lined" id="page-2">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 02 — foto kita</span>
+    <span class="page-label">✦ hal. 02 — pesan dari aku</span>
+    <div class="washi washi-dot"></div>
+
+    <div style="display:flex;justify-content:center;margin:10px 0 14px">
+      <div class="polaroid pol-md rot-r2">
+        <div class="tape tape-yellow tape-top"></div>
+        <div class="polaroid-img pol-img-sq ph-sunset"><img src="assets/images/gallery-photo-1.jpg" alt=""><div class="ph-ov"></div></div>
+        <div class="pol-caption">— buat kamu, Devi 🌸</div>
+      </div>
+    </div>
+
+    <div class="letter-paper">
+      <div id="typewriter-area"></div>
+    </div>
+    <div style="text-align:right;margin-top:6px">
+      <button class="skip-btn" id="skip-btn" onclick="skipTypewriter()">SKIP ⏩</button>
+    </div>
+
+    <div class="page-nav">
+      <button class="nav-btn" onclick="goPage(1)">← Balik</button>
+      <div class="nav-dot-row" id="dots-2"></div>
+      <button class="nav-btn" onclick="goPage(3)">Lanjut →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3 — GALLERY -->
+<div class="page lined" id="page-3">
+  <div class="page-inner">
+    <span class="page-label">✦ hal. 03 — foto kita</span>
     <div class="hw small" style="margin-bottom:12px">Momen-momen yang aku suka... 📸</div>
 
     <div class="photo-row">
@@ -320,17 +349,17 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(1)">← Balik</button>
-      <div class="nav-dot-row" id="dots-2"></div>
-      <button class="nav-btn" onclick="goPage(3)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(2)">← Balik</button>
+      <div class="nav-dot-row" id="dots-3"></div>
+      <button class="nav-btn" onclick="goPage(4)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 3 — GALLERY 2 -->
-<div class="page lined" id="page-3">
+<!-- PAGE 4 — GALLERY 2 -->
+<div class="page lined" id="page-4">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 03 — foto kita (lanjut)</span>
+    <span class="page-label">✦ hal. 04 — foto kita (lanjut)</span>
 
     <div class="photo-row">
       <div class="polaroid pol-sm rot-l2">
@@ -371,17 +400,17 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(2)">← Balik</button>
-      <div class="nav-dot-row" id="dots-3"></div>
-      <button class="nav-btn" onclick="goPage(4)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(3)">← Balik</button>
+      <div class="nav-dot-row" id="dots-4"></div>
+      <button class="nav-btn" onclick="goPage(5)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 4 — GALLERY 3 -->
-<div class="page lined" id="page-4">
+<!-- PAGE 5 — GALLERY 3 -->
+<div class="page lined" id="page-5">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 04 — foto kita (selesai)</span>
+    <span class="page-label">✦ hal. 05 — foto kita (selesai)</span>
 
     <div class="photo-row">
       <div class="polaroid pol-sm rot-r2">
@@ -418,35 +447,6 @@
         <div class="polaroid-img pol-img-sq ph-green"><img src="assets/images/akukamu18.jpg" alt=""><div class="ph-ov"></div></div>
         <div class="pol-caption">selalu 🤍</div>
       </div>
-    </div>
-
-    <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(3)">← Balik</button>
-      <div class="nav-dot-row" id="dots-4"></div>
-      <button class="nav-btn" onclick="goPage(5)">Lanjut →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE 5 — PESAN -->
-<div class="page lined" id="page-5">
-  <div class="page-inner">
-    <span class="page-label">✦ hal. 05 — pesan dari aku</span>
-    <div class="washi washi-dot"></div>
-
-    <div style="display:flex;justify-content:center;margin:10px 0 14px">
-      <div class="polaroid pol-md rot-r2">
-        <div class="tape tape-yellow tape-top"></div>
-        <div class="polaroid-img pol-img-sq ph-sunset"><img src="assets/images/gallery-photo-1.jpg" alt=""><div class="ph-ov"></div></div>
-        <div class="pol-caption">— buat kamu, Devi 🌸</div>
-      </div>
-    </div>
-
-    <div class="letter-paper">
-      <div id="typewriter-area"></div>
-    </div>
-    <div style="text-align:right;margin-top:6px">
-      <button class="skip-btn" id="skip-btn" onclick="skipTypewriter()">SKIP ⏩</button>
     </div>
 
     <div class="page-nav">
@@ -592,7 +592,7 @@ function goPage(n) {
   el.style.display = 'block';
   renderDots(n);
   window.scrollTo({top:0, behavior:'smooth'});
-  if (n === 5) initTypewriter();
+  if (n === 2) initTypewriter();
 }
 
 function renderDots(p) {
@@ -656,45 +656,17 @@ function finishTW() {
 function skipTypewriter() { finishTW(); }
 
 // ══════════ MUSIC ══════════
-const TRACKS = [
-  { name: 'AOI x ASEP BALON x FANNY SABILA - BANDUNG JUARA', file: 'AOI x ASEP BALON x FANNY SABILA - BANDUNG JUARA (Official Music Video) [PROD. BY FANNY SABILA].mp3' },
-  { name: 'CLBK - Djiamputh ft. Ardinarass (DJ Version)', file: 'CLBK - Djiamputh ft. Ardinarass (DJ Version).mp3' },
-  { name: 'DENNY CAKNAN - NEMEN ft. Gilga Sahid', file: 'DENNY CAKNAN FEAT. GILGA SAHID - NEMEN (OFFICIAL LIVE MUSIC) - DC MUSIK.mp3' },
-  { name: 'DJ SABEN DINO RAIMU PETENG', file: 'DJ SABEN DINO RAIMU PETENG DEDET FULL SENYUM SAYANG MOCIL FVNKY VIRAL TIK TOK.mp3' },
-  { name: 'DJiamputh X NOK YEKA', file: 'DJiamputh X NOK YEKA - Nan Ko Paham Su Jauh Sa Tanam Hati Tapi Tra Hasil Viral Tiktok.mp3' },
-  { name: 'Denny Caknan - Sigar', file: 'Denny Caknan - Sigar (Official Music Video).mp3' },
-  { name: 'Do I Wanna Know', file: 'Do I Wanna Know.mp3' },
-  { name: 'Follow You', file: 'Follow You.mp3' },
-  { name: 'Happy Asmara - Dalan Liyane', file: 'Happy Asmara - Dalan Liyane (Official Music Video ANEKA SAFARI) Ciptaan Hendra Kumbara.mp3' },
-  { name: 'Hayang Éta - Swarantara', file: 'Hayang Éta - Swarantara (Official Lyric Video).mp3' },
-  { name: 'JALIR - SWARANTARA', file: 'JALIR - SWARANTARA.mp3' },
-  { name: 'Janji Suci - Yovie & Nuno (Felix Irwan Cover)', file: 'Janji Suci Yovie & Nuno ( Felix Irwan Cover ).mp3' },
-  { name: 'Favorite Girl - Justin Bieber', file: 'Justin Bieber - Favorite Girl (Lyrics).mp3' },
-  { name: 'Kimcil Kepolen', file: 'Kimcil Kepolen.mp3' },
-  { name: 'Lilakno Aku', file: 'Lilakno Aku.mp3' },
-  { name: 'Lingsir Wengi', file: 'Lingsir Wengi.mp3' },
-  { name: 'Mangan Ra Njaluk Kowe', file: 'Mangan Ra Njaluk Kowe - NO.mp3' },
-  { name: 'NDX A.K.A - Kelingan Mantan', file: 'NDX A K A Kelingan Mantan.mp3' },
-  { name: 'NDX A.K.A - Rasah Dadi Pelangi', file: 'NDX A.K.A - Rasah Dadi Pelan.mp3' },
-  { name: 'No. 1 Party Anthem', file: 'No. 1 Party Anthem.mp3' },
-  { name: 'Northsle feat. Agiff - Bubrah', file: 'Northsle feat. Agiff - Bubrah.mp3' },
-  { name: 'Northsle feat. Agiff - Tresno Liane', file: 'Northsle feat. Agiff - Tresno Li.mp3' },
-  { name: 'Rasah Bali - LAVORA ft. Ena Vi', file: 'Rasah Bali - LAVORA Ft Ena Vi.mp3' },
-  { name: 'Sabar - Sadewok', file: 'Sabar - Sadewok (Official Musi.mp3' },
-  { name: 'Safira Inema - Lewat Angin Wengi', file: 'Safira Inema - Lewat Angin We.mp3' },
-  { name: 'Semesta Untukmu (Remastered)', file: 'Semesta Untukmu (Remastered).mp3' },
-  { name: 'Serendipity (Remastered)', file: 'Serendipity (Remastered).mp3' },
-  { name: 'Sleepwalking', file: 'Sleepwalking.mp3' },
-  { name: 'Stel Kendo - Djiamputh (DJ Version)', file: 'Stel Kendo - Djiamputh (DJ Ver.mp3' },
-  { name: 'TAMU UNDANGAN (Reggae)', file: 'TAMU UNDANGAN (Reggae).mp3' },
-  { name: 'TEKOMLAKU feat. Ervinsof', file: 'TEKOMLAKU feat. Ervinsof - Ra.mp3' },
-  { name: 'TEMAN RASA PACAR - Djiamputh', file: 'TEMAN RASA PACAR - Djiamp.mp3' },
-  { name: 'Tewas Tertimbun Masa Lalu', file: 'Tewas Tertimbun Masa Lalu (T.mp3' },
-  { name: 'Vadesta - Mencintai Dengan Nurani', file: 'Vadesta - Mencintai Dengan N.mp3' },
-];
-
+let TRACKS = [];
 const audioEl = document.getElementById('audio-el');
 let curTrack = -1, isPlaying = false;
+
+TRACKS = [
+  { name: 'Serendipity (Remastered)', file: 'Serendipity (Remastered).mp3' },
+  { name: 'Semesta Untukmu (Remastered)', file: 'Semesta Untukmu (Remastered).mp3' },
+  { name: 'Janji Suci - Yovie & Nuno (Felix Irwan Cover)', file: 'Janji Suci Yovie & Nuno ( Felix Irwan Cover ).mp3' },
+  { name: 'Follow You', file: 'Follow You.mp3' },
+  { name: 'Favorite Girl - Justin Bieber', file: 'Justin Bieber - Favorite Girl (Lyrics).mp3' },
+];
 
 function renderTracks() {
   const tl = document.getElementById('track-list');
