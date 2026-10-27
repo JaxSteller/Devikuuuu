@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For Sayanggg 🌸</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
   :root {
     --paper:      #fdf6ee;
@@ -93,7 +92,6 @@
 
   /* ── PAGE ── */
   .page { min-height: 100vh; background: var(--paper); position: relative; padding: 28px 16px 48px; display: none; }
-  .page:nth-child(even) { background: var(--paper-3); }
   .page-inner { position: relative; z-index: 1; max-width: 480px; margin: 0 auto; }
   .page-label { font-family: 'Caveat', cursive; font-size: 13px; color: var(--accent); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; display: block; }
 
@@ -104,14 +102,11 @@
   .pol-caption { font-family: 'Caveat', cursive; font-size: 14px; color: var(--ink-soft); text-align: center; margin-top: 6px; position: absolute; bottom: 6px; left: 0; right: 0; }
   .ph-ov { position: absolute; inset: 0; background: linear-gradient(160deg,rgba(255,255,255,0.12) 0%,transparent 60%); pointer-events: none; }
 
-  /* photo sizes */
   .pol-sm  { width: calc(50% - 7px); }
   .pol-md  { width: min(200px, 100%); }
   .pol-hero{ width: min(230px, 100%); }
   .pol-img-sq  { width: 100%; aspect-ratio: 1; }
-  .pol-img-port{ width: 100%; aspect-ratio: 3/4; }
 
-  /* photo bg gradients */
   .ph-warm  { background: linear-gradient(135deg,#f5c9a5,#e0956a); }
   .ph-rosy  { background: linear-gradient(135deg,#f5b8c8,#e890a8); }
   .ph-cool  { background: linear-gradient(135deg,#a8c8e8,#7ba8cc); }
@@ -121,7 +116,6 @@
   .ph-mint  { background: linear-gradient(135deg,#a8e8d8,#70c8b0); }
   .ph-green { background: linear-gradient(135deg,#b8d8a8,#90b878); }
 
-  /* rotation */
   .rot-l1{transform:rotate(-1deg)} .rot-r1{transform:rotate(1deg)}
   .rot-l2{transform:rotate(-2deg)} .rot-r2{transform:rotate(2deg)}
   .rot-l4{transform:rotate(-4deg)} .rot-r4{transform:rotate(4.5deg)}
@@ -170,15 +164,13 @@
   .track-num { font-family: 'Caveat', cursive; font-size: 14px; color: var(--accent-soft); width: 18px; flex-shrink: 0; }
   .track-info { flex: 1; min-width: 0; }
   .track-name { font-family: 'Caveat', cursive; font-size: 15px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .track-art  { font-family: 'Caveat', cursive; font-size: 13px; color: var(--ink-soft); }
-  .playing-icon { font-size: 14px; animation: eq 0.8s step-start infinite; }
-  @keyframes eq { 0%{content:'♪'} 50%{content:'♫'} }
+  .playing-icon { font-size: 14px; }
 
   /* ── NAV ── */
   .page-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 24px; padding-top: 16px; border-top: 1px dashed rgba(180,160,140,0.4); }
   .nav-btn { font-family: 'Caveat', cursive; font-size: 17px; background: none; border: 1.5px solid var(--accent-soft); color: var(--ink-soft); padding: 6px 18px; cursor: pointer; border-radius: 3px; transition: background 0.15s; }
   .nav-btn:hover { background: var(--accent-soft); color: var(--ink); }
-  .nav-dot-row { display: flex; gap: 6px; align-items: center; }
+  .nav-dot-row { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center; max-width: 120px; }
   .nav-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-soft); cursor: pointer; transition: background 0.2s; }
   .nav-dot.active { background: var(--accent); }
 
@@ -190,6 +182,63 @@
   .heart-anim { animation: heartbeat 1.5s ease-in-out infinite; display: inline-block; }
   @keyframes float { 0%,100%{transform:translateY(0) rotate(var(--r,0deg))} 50%{transform:translateY(-7px) rotate(var(--r,0deg))} }
   .floaty { position: fixed; pointer-events: none; z-index: 0; animation: float 3.5s ease-in-out infinite; opacity: 0.4; font-size: 20px; }
+
+  /* ══════════ PAGE 2: LDR MAP (desain Canva) ══════════ */
+  .ldr { position: relative; min-height: 100vh; background: #f2efea; overflow: hidden; color: #3a0b0e; padding: 0 0 28px; }
+  .ldr-map { position: absolute; inset: 0; z-index: 0;
+    background:
+      url('assets/images/map-bg.png') center/cover no-repeat,
+      #f2efea; }
+  .ldr-map svg { width: 100%; height: 100%; display: block; }
+
+  .ldr-stage { position: relative; z-index: 1; width: 100%; max-width: 1200px; margin: 0 auto; aspect-ratio: 16/9; container-type: inline-size; }
+  .ldr-stage > * { position: absolute; }
+  .ldr-path-p { display: none; }
+  .ldr-svg { inset: 0; width: 100%; height: 100%; }
+
+  .ldr-next { left: 50%; top: 5.8%; transform: translateX(-50%); background: #3a0b0e; color: #fff; border: none; cursor: pointer;
+    font-family: 'Lora', serif; font-size: 3.2cqw; padding: .6cqw 4.5cqw; border-radius: 99px; line-height: 1.3; }
+
+  /* 1em = 1% lebar stage */
+  .pin { font-size: 1cqw; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; }
+  .pin-head { width: 11.8em; height: 11.8em; border-radius: 50%; background: #3a0b0e; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
+  .pin-head img { width: 10em; height: 10em; border-radius: 50%; object-fit: cover; background: #e8c4c4; }
+  .pin-tail { width: 0; height: 0; border-left: 5.4em solid transparent; border-right: 5.4em solid transparent; border-top: 8.6em solid #3a0b0e; margin-top: -2.8em; }
+  .pin-dot { width: 2.6em; height: 2.6em; border-radius: 50%; background: #3a0b0e; margin-top: .8em; }
+  .pin-a { left: 19.2%; top: 5.9%; }
+  .pin-b { left: 81.2%; top: 20%; }
+
+  .city { font-family: 'Lora', serif; font-size: 5.6cqw; line-height: 1; white-space: nowrap; }
+  .city b { font-family: 'Great Vibes', cursive; font-weight: 400; font-size: 1.7em; line-height: .6; vertical-align: -.12em; }
+  .city-a { left: 6.8%; top: 46%; }
+  .city-b { right: 4.5%; top: 4%; }
+
+  .ldr-heart { width: 6.5cqw; opacity: .75; }
+  .ldr-h1 { left: 6%; top: 30%; }
+  .ldr-h2 { right: 5%; top: 43%; }
+
+  .ldr-box { position: relative; z-index: 2; max-width: 1000px; margin: -6px auto 0; width: calc(100% - 32px);
+    background: #3a0b0e; color: #f5ede0; border-radius: 28px; padding: 22px 28px;
+    font-family: 'Lora', serif; font-size: clamp(14px, 1.75vw, 24px); line-height: 1.5; text-align: justify;
+    box-shadow: 0 10px 40px rgba(58,11,14,.3); }
+  .ldr-back { position: relative; z-index: 2; display: block; margin: 14px auto 0; background: none; border: none;
+    font-family: 'Caveat', cursive; font-size: 18px; color: #3a0b0e; cursor: pointer; }
+
+  /* HP / portrait */
+  @media (max-aspect-ratio: 1/1) {
+    .ldr-stage { aspect-ratio: 3/4; }
+    .pin { font-size: 1.6cqw; }
+    .pin-a { left: 27%; top: 3%; }
+    .pin-b { left: 76%; top: 50%; }
+    .city { font-size: 11cqw; }
+    .city-a { left: 8%; top: 30%; }
+    .city-b { right: 6%; top: 80%; }
+    .ldr-next { top: 2%; font-size: 6cqw; padding: 1cqw 9cqw; left: 66%; }
+    .ldr-path-l { display: none; }
+    .ldr-path-p { display: block; }
+    .ldr-heart { display: none; }
+    .ldr-box { padding: 18px 18px; border-radius: 22px; }
+  }
   </style>
 </head>
 <body>
@@ -230,7 +279,7 @@
       <div class="cover-caption">buat kamu, dari aku 🤍</div>
     </div>
     <div class="cover-title">For You,<br>Sayanggg 🌸</div>
-    <div class="cover-sub">Sebuah scrapbook kecil<br>tentang kamu & kita</div>
+    <div class="cover-sub">Sebuah scrapbook kecil<br>tentang kamu &amp; kita</div>
     <div class="cover-date">5 November 2026 🎂</div>
     <button class="cover-btn" onclick="openBook()">Buka Buku →</button>
   </div>
@@ -276,109 +325,78 @@
 </div>
 
 <!-- PAGE 2 — LDR MAP -->
-<div class="page" id="page-2" style="background:var(--paper);padding:0;overflow:hidden">
-  <div style="position:relative;min-height:100vh;display:flex;flex-direction:column">
-
-    <!-- MAP BG -->
-    <div style="position:absolute;inset:0;z-index:0;overflow:hidden">
-      <svg width="100%" height="100%" viewBox="0 0 480 600" preserveAspectRatio="xMidYMid slice" style="opacity:0.13">
-        <!-- street grid -->
-        <line x1="0" y1="80"  x2="480" y2="80"  stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="0" y1="160" x2="480" y2="160" stroke="#6b4f3a" stroke-width="0.8"/>
-        <line x1="0" y1="240" x2="480" y2="240" stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="0" y1="320" x2="480" y2="320" stroke="#6b4f3a" stroke-width="0.8"/>
-        <line x1="0" y1="400" x2="480" y2="400" stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="0" y1="480" x2="480" y2="480" stroke="#6b4f3a" stroke-width="0.8"/>
-        <line x1="60"  y1="0" x2="60"  y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="140" y1="0" x2="140" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
-        <line x1="220" y1="0" x2="220" y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="300" y1="0" x2="300" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
-        <line x1="380" y1="0" x2="380" y2="600" stroke="#6b4f3a" stroke-width="1.5"/>
-        <line x1="440" y1="0" x2="440" y2="600" stroke="#6b4f3a" stroke-width="0.8"/>
-        <!-- diagonal roads -->
-        <line x1="0" y1="200" x2="200" y2="0"   stroke="#6b4f3a" stroke-width="0.6"/>
-        <line x1="280" y1="600" x2="480" y2="400" stroke="#6b4f3a" stroke-width="0.6"/>
-        <!-- blocks -->
-        <rect x="80"  y="90"  width="50" height="60" fill="#6b4f3a" opacity="0.18" rx="2"/>
-        <rect x="160" y="170" width="50" height="60" fill="#6b4f3a" opacity="0.12" rx="2"/>
-        <rect x="300" y="90"  width="70" height="40" fill="#6b4f3a" opacity="0.15" rx="2"/>
-        <rect x="90"  y="260" width="40" height="50" fill="#6b4f3a" opacity="0.1"  rx="2"/>
-        <rect x="320" y="260" width="50" height="70" fill="#6b4f3a" opacity="0.13" rx="2"/>
+<div class="page" id="page-2" style="padding:0">
+  <div class="ldr">
+    <div class="ldr-map">
+      <!-- pola peta cadangan (dipakai kalau map-bg.png tidak ada) -->
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="none" stroke="#d6d0ca" stroke-linecap="round">
+          <circle cx="800" cy="520" r="520" stroke-width="22"/>
+          <circle cx="800" cy="520" r="340" stroke-width="10"/>
+          <circle cx="800" cy="520" r="170" stroke-width="8"/>
+          <path d="M0 220 C400 260 700 120 1100 -40" stroke-width="18"/>
+          <path d="M0 700 C300 640 600 780 900 920" stroke-width="16"/>
+          <path d="M1600 300 C1300 340 1100 520 1000 900" stroke-width="18"/>
+          <path d="M700 0 C720 300 640 600 660 900" stroke-width="16"/>
+          <path d="M0 450 L1600 430" stroke-width="12"/>
+          <path d="M300 0 L420 900" stroke-width="7"/>
+          <path d="M1200 0 L1380 900" stroke-width="7"/>
+          <path d="M0 120 L1600 160" stroke-width="6"/>
+          <path d="M0 820 L1600 780" stroke-width="6"/>
+          <path d="M200 100 L260 800 M520 60 L560 840 M960 40 L1010 860 M1450 80 L1500 820" stroke-width="4"/>
+          <path d="M40 330 L1560 360 M20 580 L1580 600 M60 700 L1540 690" stroke-width="4"/>
+        </g>
       </svg>
     </div>
 
-    <!-- CONTENT -->
-    <div style="position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;padding:28px 16px 40px">
+    <div class="ldr-stage">
+      <!-- jalur titik-titik + pesawat (landscape) -->
+      <svg class="ldr-svg ldr-path-l" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet">
+        <path d="M600 540 C700 530 800 500 830 450 C740 400 680 330 720 270 C760 210 880 220 890 320 C895 400 840 450 800 455 C900 520 1050 520 1170 468"
+              fill="none" stroke="#3a0b0e" stroke-width="14" stroke-linecap="round" stroke-dasharray="1 24"/>
+        <path fill="#3a0b0e" transform="translate(1240 420) rotate(58) scale(7.5) translate(-12 -12)"
+              d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+      </svg>
+      <!-- jalur untuk HP (portrait) -->
+      <svg class="ldr-svg ldr-path-p" viewBox="0 0 390 520">
+        <path d="M60 330 C90 330 130 330 150 300 C120 270 110 225 135 205 C160 185 195 200 192 235 C188 265 165 285 150 295 C190 340 230 345 245 330"
+              fill="none" stroke="#3a0b0e" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        <path fill="#3a0b0e" transform="translate(262 322) rotate(50) scale(3.2) translate(-12 -12)"
+              d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+      </svg>
 
-      <span style="font-family:'Caveat',cursive;font-size:13px;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px">✦ hal. 02 — kita &amp; jarak</span>
+      <button class="ldr-next" onclick="goPage(3)">Next</button>
 
-      <!-- distance label -->
-      <div style="font-family:'Caveat',cursive;font-size:16px;color:var(--ink-soft);margin-bottom:18px">± 150 km · tapi hati nggak pernah jauh 🤍</div>
+      <!-- hati -->
+      <svg class="ldr-heart ldr-h1" viewBox="0 0 24 24"><path fill="#5a3238" d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z"/></svg>
+      <svg class="ldr-heart ldr-h2" viewBox="0 0 24 24"><path fill="#5a3238" d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z"/></svg>
 
-      <!-- MAP PINS ROW -->
-      <div style="width:100%;max-width:420px;position:relative;height:220px;margin-bottom:8px">
-
-        <!-- dotted path + plane -->
-        <svg style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" viewBox="0 0 420 220" preserveAspectRatio="none">
-          <!-- dotted arc -->
-          <path d="M 90 160 Q 210 40 330 160" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 6" opacity="0.7"/>
-          <!-- plane at midpoint -->
-          <text x="206" y="80" font-size="22" text-anchor="middle" transform="rotate(-20,206,80)">✈️</text>
-        </svg>
-
-        <!-- PIN LEFT — kamu -->
-        <div style="position:absolute;left:20px;bottom:20px;display:flex;flex-direction:column;align-items:center;gap:4px">
-          <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;border:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);background:linear-gradient(135deg,#f5c9a5,#e0956a)">
-            <img src="assets/images/akukamu1" alt="" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div style="width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:18px solid var(--accent);margin-top:-4px"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:-4px"></div>
-          <div style="font-family:'Caveat',cursive;font-size:20px;font-weight:700;color:var(--ink);margin-top:4px;font-style:italic">Jakarta</div>
-        </div>
-
-        <!-- PIN RIGHT — dia -->
-        <div style="position:absolute;right:20px;bottom:20px;display:flex;flex-direction:column;align-items:center;gap:4px">
-          <div style="width:70px;height:70px;border-radius:50%;overflow:hidden;border:4px solid var(--accent);box-shadow:0 4px 14px var(--shadow);background:linear-gradient(135deg,#f5b8c8,#e890a8)">
-            <img src="assets/images/akukamu1" alt="" style="width:100%;height:100%;object-fit:cover">
-          </div>
-          <div style="width:0;height:0;border-left:10px solid transparent;border-right:10px solid transparent;border-top:18px solid var(--accent);margin-top:-4px"></div>
-          <div style="width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:-4px"></div>
-          <div style="font-family:'Caveat',cursive;font-size:20px;font-weight:700;color:var(--ink);margin-top:4px;font-style:italic">Bandung</div>
-        </div>
+      <!-- pin Jakarta -->
+      <div class="pin pin-a">
+        <div class="pin-head"><img src="assets/images/akukamu1" alt=""></div>
+        <div class="pin-tail"></div><div class="pin-dot"></div>
       </div>
+      <div class="city city-a"><b>J</b>akarta</div>
 
-      <!-- HEARTS decoration -->
-      <div style="display:flex;gap:6px;margin:4px 0 14px;font-size:18px;opacity:0.6">🤍 🌸 🤍</div>
-
-      <!-- MESSAGE CARD -->
-      <div style="background:rgba(44,31,20,0.82);border-radius:6px;padding:20px 20px;max-width:400px;width:100%">
-        <div style="font-family:'Lora',serif;font-size:14.5px;line-height:1.85;color:#f5ede0;text-align:center">
-          Jarak bukan penghalang — dia adalah bukti.<br>
-          Bukti bahwa kamu cukup berarti untuk aku pilih,<br>
-          setiap hari, meski hanya lewat layar.<br><br>
-          Sebulan sekali kita bertemu,<br>
-          tapi rasa ini hadir dua puluh empat jam,<br>
-          tanpa henti, tanpa lelah.<br><br>
-          <em style="font-size:13px;opacity:0.85">Karena kamu bukan hanya tujuan perjalananku —<br>kamu alasan aku mau berangkat. 🤍</em>
-        </div>
+      <!-- pin Bandung -->
+      <div class="pin pin-b">
+        <div class="pin-head"><img src="assets/images/akukamu2.jpg" alt=""></div>
+        <div class="pin-tail"></div><div class="pin-dot"></div>
       </div>
-
-      <div class="page-nav" style="width:100%;max-width:480px;margin-top:24px;padding-top:16px;border-top:1px dashed rgba(180,160,140,0.4);display:flex;justify-content:space-between;align-items:center">
-        <button class="nav-btn" onclick="goPage(1)">← Balik</button>
-        <div class="nav-dot-row" id="dots-2"></div>
-        <button class="nav-btn" onclick="goPage(3)">Lanjut →</button>
-      </div>
+      <div class="city city-b"><b>B</b>andung</div>
     </div>
+
+    <div class="ldr-box">
+      Meskipun jarak dan perbedaan zona waktu sering kali membatasi kita untuk merayakan hari spesial ini secara langsung, rasa sayang dan doaku selalu sampai untukmu tanpa berkurang sedikit pun. Selamat ulang tahun; terima kasih sudah terus bertahan, saling percaya, dan membuktikan bahwa ruang yang membentang di antara kita tidak pernah cukup jauh untuk menandingi eratnya hubungan kita.
+    </div>
+    <button class="ldr-back" onclick="goPage(1)">← Balik</button>
   </div>
 </div>
 
 <!-- PAGE 3 — PESAN -->
-<div class="page lined" id="page-2-old" style="display:none"></div>
-<div class="page lined" id="page-3-real" style="display:none"></div>
-<!-- ACTUAL PAGE 3 (was page 2) -->
 <div class="page lined" id="page-3">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 02 — pesan dari aku</span>
+    <span class="page-label">✦ hal. 03 — pesan dari aku</span>
     <div class="washi washi-dot"></div>
 
     <div style="display:flex;justify-content:center;margin:10px 0 14px">
@@ -397,17 +415,17 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(1)">← Balik</button>
-      <div class="nav-dot-row" id="dots-2"></div>
-      <button class="nav-btn" onclick="goPage(3)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(2)">← Balik</button>
+      <div class="nav-dot-row" id="dots-3"></div>
+      <button class="nav-btn" onclick="goPage(4)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 3 — GALLERY -->
-<div class="page lined" id="page-3">
+<!-- PAGE 4 — GALLERY 1 -->
+<div class="page lined" id="page-4">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 03 — foto kita</span>
+    <span class="page-label">✦ hal. 04 — foto kita</span>
     <div class="hw small" style="margin-bottom:12px">Momen-momen yang aku suka... 📸</div>
 
     <div class="photo-row">
@@ -449,17 +467,17 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(2)">← Balik</button>
-      <div class="nav-dot-row" id="dots-3"></div>
-      <button class="nav-btn" onclick="goPage(4)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(3)">← Balik</button>
+      <div class="nav-dot-row" id="dots-4"></div>
+      <button class="nav-btn" onclick="goPage(5)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 4 — GALLERY 2 -->
-<div class="page lined" id="page-4">
+<!-- PAGE 5 — GALLERY 2 -->
+<div class="page lined" id="page-5">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 04 — foto kita (lanjut)</span>
+    <span class="page-label">✦ hal. 05 — foto kita (lanjut)</span>
 
     <div class="photo-row">
       <div class="polaroid pol-sm rot-l2">
@@ -500,17 +518,17 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(3)">← Balik</button>
-      <div class="nav-dot-row" id="dots-4"></div>
-      <button class="nav-btn" onclick="goPage(5)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(4)">← Balik</button>
+      <div class="nav-dot-row" id="dots-5"></div>
+      <button class="nav-btn" onclick="goPage(6)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 5 — GALLERY 3 -->
-<div class="page lined" id="page-5">
+<!-- PAGE 6 — GALLERY 3 -->
+<div class="page lined" id="page-6">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 05 — foto kita (selesai)</span>
+    <span class="page-label">✦ hal. 06 — foto kita (selesai)</span>
 
     <div class="photo-row">
       <div class="polaroid pol-sm rot-r2">
@@ -550,30 +568,6 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(4)">← Balik</button>
-      <div class="nav-dot-row" id="dots-5"></div>
-      <button class="nav-btn" onclick="goPage(6)">Lanjut →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE 6 — HAL TENTANG KAMU -->
-<div class="page lined" id="page-6">
-  <div class="page-inner">
-    <span class="page-label">✦ hal. 06 — hal yang aku suka dari kamu</span>
-    <div class="washi washi-floral"></div>
-    <div class="hw" style="margin:8px 0 16px">Yang bikin aku suka sama kamu... 🌸</div>
-
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <div class="sticky pink" style="transform:rotate(-1deg);max-width:100%">✨ cara kamu ketawa pelan-pelan pas ada yang lucu</div>
-      <div class="sticky green" style="transform:rotate(0.8deg);max-width:100%;margin-left:16px">🌿 kamu perfeksionis tapi tetap hangat & perhatian</div>
-      <div class="sticky" style="transform:rotate(-0.5deg);max-width:100%">⭐ cara kamu perhatiin hal kecil yang orang lain skip</div>
-      <div class="sticky blue" style="transform:rotate(1.2deg);max-width:100%;margin-left:8px">🌸 sifat pemalu kamu yang somehow tetap bikin kamu beda</div>
-      <div class="sticky pink" style="transform:rotate(-1.5deg);max-width:100%;margin-left:20px">💜 cara kamu ada buat aku tanpa harus aku minta</div>
-      <div class="sticky" style="transform:rotate(0.6deg);max-width:100%">🌻 <em>...dan masih banyak lagi yang nggak cukup satu buku 🤍</em></div>
-    </div>
-
-    <div class="page-nav">
       <button class="nav-btn" onclick="goPage(5)">← Balik</button>
       <div class="nav-dot-row" id="dots-6"></div>
       <button class="nav-btn" onclick="goPage(7)">Lanjut →</button>
@@ -581,13 +575,36 @@
   </div>
 </div>
 
-<!-- PAGE 7 — MUSIK -->
+<!-- PAGE 7 — HAL TENTANG KAMU -->
 <div class="page lined" id="page-7">
   <div class="page-inner">
-    <span class="page-label">✦ hal. 07 — playlist buat kamu</span>
+    <span class="page-label">✦ hal. 07 — hal yang aku suka dari kamu</span>
+    <div class="washi washi-floral"></div>
+    <div class="hw" style="margin:8px 0 16px">Yang bikin aku suka sama kamu... 🌸</div>
+
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="sticky pink" style="transform:rotate(-1deg);max-width:100%">✨ cara kamu ketawa pelan-pelan pas ada yang lucu</div>
+      <div class="sticky green" style="transform:rotate(0.8deg);max-width:100%;margin-left:16px">🌿 kamu perfeksionis tapi tetap hangat &amp; perhatian</div>
+      <div class="sticky" style="transform:rotate(-0.5deg);max-width:100%">⭐ cara kamu perhatiin hal kecil yang orang lain skip</div>
+      <div class="sticky blue" style="transform:rotate(1.2deg);max-width:100%;margin-left:8px">🌸 sifat pemalu kamu yang somehow tetap bikin kamu beda</div>
+      <div class="sticky pink" style="transform:rotate(-1.5deg);max-width:100%;margin-left:20px">💜 cara kamu ada buat aku tanpa harus aku minta</div>
+      <div class="sticky" style="transform:rotate(0.6deg);max-width:100%">🌻 <em>...dan masih banyak lagi yang nggak cukup satu buku 🤍</em></div>
+    </div>
+
+    <div class="page-nav">
+      <button class="nav-btn" onclick="goPage(6)">← Balik</button>
+      <div class="nav-dot-row" id="dots-7"></div>
+      <button class="nav-btn" onclick="goPage(8)">Lanjut →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 8 — MUSIK -->
+<div class="page lined" id="page-8">
+  <div class="page-inner">
+    <span class="page-label">✦ hal. 08 — playlist buat kamu</span>
     <div class="hw small" style="margin-bottom:12px">Lagu-lagu yang ngingetin aku ke kamu 🎵</div>
 
-    <!-- mini player -->
     <div class="player-bar">
       <button class="prev-next-btn" onclick="prevTrack()">⏮</button>
       <button class="play-btn" id="play-btn" onclick="togglePlay()">▶</button>
@@ -609,21 +626,21 @@
     </div>
 
     <div class="page-nav">
-      <button class="nav-btn" onclick="goPage(6)">← Balik</button>
-      <div class="nav-dot-row" id="dots-7"></div>
-      <button class="nav-btn" onclick="goPage(8)">Lanjut →</button>
+      <button class="nav-btn" onclick="goPage(7)">← Balik</button>
+      <div class="nav-dot-row" id="dots-8"></div>
+      <button class="nav-btn" onclick="goPage(9)">Lanjut →</button>
     </div>
   </div>
 </div>
 
-<!-- PAGE 8 — FINAL -->
-<div class="page lined" id="page-8">
+<!-- PAGE 9 — FINAL -->
+<div class="page lined" id="page-9">
   <div class="page-inner" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;text-align:center">
     <div style="font-size:64px" class="heart-anim">🎂</div>
     <div style="font-family:'Caveat',cursive;font-size:40px;font-weight:700;color:var(--accent);line-height:1.2;margin-top:8px">
       Happy 22nd Birthday,<br>Sayanggg 🌸
     </div>
-    <div style="margin:14px 0"><div class="washi washi-floral"></div></div>
+    <div style="margin:14px 0;width:100%"><div class="washi washi-floral"></div></div>
     <div style="font-family:'Caveat',cursive;font-size:20px;color:var(--ink-soft);line-height:1.8;max-width:280px">
       Semoga tahun ini jadi<br>tahun terbaik kamu.<br><br>
       Dan semoga aku bisa terus<br>ada di sisimu selamanya. 🤍
@@ -635,8 +652,8 @@
       </div>
     </div>
     <div class="page-nav" style="width:100%;margin-top:32px">
-      <button class="nav-btn" onclick="goPage(7)">← Balik</button>
-      <div class="nav-dot-row" id="dots-8"></div>
+      <button class="nav-btn" onclick="goPage(8)">← Balik</button>
+      <div class="nav-dot-row" id="dots-9"></div>
       <button class="nav-btn" onclick="goPage(1)">Dari Awal ↺</button>
     </div>
   </div>
@@ -663,7 +680,6 @@
   function showCover() {
     document.getElementById('loading-screen').style.display = 'none';
     document.getElementById('cover').style.display = 'flex';
-    // start bg music on user interaction
     document.getElementById('cover').addEventListener('click', tryBgMusic, {once:true});
   }
 })();
@@ -676,7 +692,7 @@ function tryBgMusic() {
 
 // ══════════ PAGES ══════════
 const TOTAL = 9;
-let curPage = 1;
+let curPage = 0;
 
 function openBook() {
   document.getElementById('cover').style.display = 'none';
@@ -686,10 +702,12 @@ function openBook() {
 }
 
 function goPage(n) {
-  if (curPage) document.getElementById('page-'+curPage).style.display = 'none';
+  for (let i = 1; i <= TOTAL; i++) {
+    const pg = document.getElementById('page-' + i);
+    if (pg) pg.style.display = 'none';
+  }
   curPage = n;
-  const el = document.getElementById('page-'+curPage);
-  el.style.display = 'block';
+  document.getElementById('page-' + n).style.display = 'block';
   renderDots(n);
   window.scrollTo({top:0, behavior:'smooth'});
   if (n === 3) initTypewriter();
@@ -697,7 +715,7 @@ function goPage(n) {
 
 function renderDots(p) {
   for (let i = 1; i <= TOTAL; i++) {
-    const el = document.getElementById('dots-'+i);
+    const el = document.getElementById('dots-' + i);
     if (!el) continue;
     el.innerHTML = '';
     for (let j = 1; j <= TOTAL; j++) {
@@ -742,7 +760,6 @@ function initTypewriter() {
     const ch = MSG[twIdx++];
     if (ch === '\n') el.insertBefore(document.createElement('br'), cursor);
     else el.insertBefore(document.createTextNode(ch), cursor);
-    el.parentElement.scrollTop = el.parentElement.scrollHeight;
   }, 28);
 }
 
@@ -756,11 +773,10 @@ function finishTW() {
 function skipTypewriter() { finishTW(); }
 
 // ══════════ MUSIC ══════════
-let TRACKS = [];
 const audioEl = document.getElementById('audio-el');
 let curTrack = -1, isPlaying = false;
 
-TRACKS = [
+const TRACKS = [
   { name: 'Serendipity (Remastered)', file: 'Serendipity (Remastered).mp3' },
   { name: 'Semesta Untukmu (Remastered)', file: 'Semesta Untukmu (Remastered).mp3' },
   { name: 'Janji Suci - Yovie & Nuno (Felix Irwan Cover)', file: 'Janji Suci Yovie & Nuno ( Felix Irwan Cover ).mp3' },
@@ -788,7 +804,6 @@ function playTrack(i) {
   curTrack = i;
   isPlaying = true;
   const t = TRACKS[i];
-  // pause backsound when music plays
   const bg = document.getElementById('bg-music');
   bg.pause();
   audioEl.src = 'assets/audio/' + t.file;
@@ -805,7 +820,6 @@ function togglePlay() {
   if (isPlaying) {
     audioEl.pause(); isPlaying = false;
     document.getElementById('play-btn').textContent = '▶';
-    // resume backsound when music paused
     bg.volume = 0.3;
     bg.play().catch(()=>{});
   } else {
@@ -821,7 +835,6 @@ function prevTrack() { playTrack((curTrack - 1 + TRACKS.length) % TRACKS.length)
 
 audioEl.addEventListener('ended', () => {
   const bg = document.getElementById('bg-music');
-  // jika tidak ada lagu berikutnya (lagu terakhir), resume backsound
   if (curTrack >= TRACKS.length - 1) {
     isPlaying = false;
     document.getElementById('play-btn').textContent = '▶';
@@ -859,5 +872,3 @@ renderDots(1);
 </script>
 </body>
 </html>
-
-</body></html>
