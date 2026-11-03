@@ -224,20 +224,9 @@
   .ldr-back { position: relative; z-index: 2; display: block; margin: 14px auto 0; background: none; border: none;
     font-family: 'Caveat', cursive; font-size: 18px; color: #3a0b0e; cursor: pointer; }
 
-  /* HP / portrait */
-  @media (max-aspect-ratio: 1/1) {
-    .ldr-stage { aspect-ratio: 3/4; }
-    .pin { font-size: 1.6cqw; }
-    .pin-a { left: 27%; top: 3%; }
-    .pin-b { left: 76%; top: 50%; }
-    .city { font-size: 11cqw; }
-    .city-a { left: 8%; top: 30%; }
-    .city-b { right: 6%; top: 80%; }
-    .ldr-next { top: 2%; font-size: 6cqw; padding: 1cqw 9cqw; left: 66%; }
-    .ldr-path-l { display: none; }
-    .ldr-path-p { display: block; }
-    .ldr-heart { display: none; }
-    .ldr-box { padding: 18px 18px; border-radius: 22px; }
+  /* HP: pakai layout yang sama dengan PC (stage ikut mengecil) */
+  @media (max-width: 700px) {
+    .ldr-box { padding: 16px 18px; border-radius: 22px; margin-top: 10px; }
   }
   </style>
 </head>
